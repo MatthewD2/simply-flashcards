@@ -20,4 +20,15 @@
         <hr>
     </header>
     <h2>This is where you create flashcards.</h2>
+    <p id="flashcard">Flashcard Front</p>
+    <button type="button" onclick="FlipFunction()"> Flip Flashcard</button>
+    <script>
+        function FlipFunction() {
+            if (document.getElementById("flashcard").innerHTML == "Flashcard Front"){
+                document.getElementById("flashcard").innerHTML = "Flashcard Back";
+            } else {
+                document.getElementById("flashcard").innerHTML = "Flashcard Front";
+            }
+        }
+    </script>
 </body>
